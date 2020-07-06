@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Survey Form</title>
+        <link href="styles/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div id="main">
+        <h1 id="title" class="text-center">Raj Vadeghar Institutions Survey Form</h1>
+        <p id="description" class="text-center">Thank you for taking time for helping us improve our platform</p>
+
+        <div class="container">
+            <form class="form-horizontal" id="survey-form" action="" method="GET">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="name" id="name-label">Name</label>
+                    <div class="col-sm-5">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name" required> 
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="email" id="email-label">Email</label>
+                    <div class="col-sm-5">
+                        <input class="form-control" id="email" type="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="number" id="number-label">Age<p class="lead" style="font-size: 16px;">(optional)</p></label>
+                    <div class="col-sm-5">
+                        <input class="form-control" id="number" type="number" placeholder="Enter your age" min="0" max="100">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="current-role">Which option best describes your current role?</label>
+                    <div class="col-sm-5">
+                        <select class="custom-select" id="dropdown">
+                            <option selected>Choose...</option>
+                            <option value="1">Student</option>
+                            <option value="2">Full time job</option>
+                            <option value="3">full time learner</option>
+                            <option value="4">Prefer not to say</option>
+                            <option value="5">Otherr</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <p class="col-sm-2">Would you recommend my projects to your friends?</p>
+                    <div class="col-sm-2">
+                        <input type="radio" id="Definately" value="Definately" name="radio-buttons" checked>
+                        <label for="Definately">Definately</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="radio" id="Maybe" value="Maybe" name="radio-buttons">
+                        <label for="Maybe">Maybe</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="radio" id="Not sure" value="Not sure" name="radio-buttons">
+                        <label for="Not sure">Not sure</label>
+                    </div>
+                </div>
+
+                <fieldset class="form-group row" style="border: solid 1px; width: 60%;">
+                    <legend class="col-sm-12">What would you like to see improved?</legend>
+                        <div class="col-sm-12">
+                            <input type="checkbox" id="Front-end Challenges" name="interest" value="Front-end Challenges" checked>
+                            <label for="Front-end Challenges">Front-end Challenges</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="checkbox" id="Back-end Challenges" name="interest" value="Back-end Challenges">
+                            <label for="Back-end Challenges">Back-end Challenges</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="checkbox" id="projects" name="interest" value="projects">
+                            <label for="projects">projects</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="checkbox" id="other" name="interest" value="other">
+                            <label for="other">other</label>
+                        </div>
+                </fieldset>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="review">Any comments or suggestions:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="review" name="review" maxlength="500" style="width: 50%;" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                </div>
+
+                <p style="line-height: 70px; text-align: center;"><button type="submit" id="button" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
